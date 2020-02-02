@@ -5,11 +5,11 @@ Este repositório é destinado para programadores php que utilizam Laravel Frame
 Instalação
 
 Instale o pacote
-$ composer require rodrigocruz/teste
+$ composer require rodrigocruz/authptbr
 
 
 Publique os pacotes
-$ php artisan vendor:publish --tag=teste --force
+$ php artisan vendor:publish --tag=authptbr --force
 
 
 Versões do Laravel suportadas
