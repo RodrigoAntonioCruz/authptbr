@@ -1,0 +1,25 @@
+{
+    "name": "rodrigocruz/authptbr",
+    "description": "Módulo Completo de Autenticação com tradução pt-BR para Laravel 6.2",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Rodrigo da Cruz",
+            "email": "rodrigoantoniocruz134@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Rodrigocruz\\AuthPtBr\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rodrigocruz\\AuthPtBr\\AuthPtBrServiceProvider"
+            ]
+        }
+    }
+}
