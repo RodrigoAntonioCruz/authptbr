@@ -5,6 +5,7 @@ Este repositório é destinado para programadores php que utilizam Laravel Frame
 Instalação
 
 Instale o pacote
+
 $ composer require rodrigocruz/authptbr
 
 
