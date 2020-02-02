@@ -9,11 +9,14 @@ $ composer require rodrigocruz/authptbr
 
 
 Publique os pacotes
+
 $ php artisan vendor:publish --tag=authptbr --force
 
 
 Versões do Laravel suportadas
+
 6.2
 
-Versão do PHP: 
+Versão do PHP
+
 7.4.1
