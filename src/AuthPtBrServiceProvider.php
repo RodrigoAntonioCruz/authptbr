@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class AuthPtBrServiceProvider extends ServiceProvider
 {
     /**
-    * Publishes translation files.
+    * Publicação do pacote AuthPtBr
     *
     * @return  void
     */
@@ -27,6 +27,9 @@ class AuthPtBrServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/routes' => base_path('routes/'),
         ],'authptbr');
+
+        //Deleta a view welcome.blade.php
+        File::delete(base_path('resources/views/welcome.blade.php'));
 
         //publica toda a pasta public
         $this->loadViewsFrom(__DIR__.'/public', 'public/');
@@ -73,9 +76,7 @@ class AuthPtBrServiceProvider extends ServiceProvider
             __DIR__.'/Controllers' => base_path('app/Http/Controllers/'),
         ],'authptbr');
 
-        //Deleta a pasta migrations
-        //File::deleteDirectory(base_path('database/migrations'));
-        
+        //Deleta os arquivos da pasta migrations
         File::delete(base_path('database/migrations/2014_10_12_000000_create_users_table.php'));
         File::delete(base_path('database/migrations/2014_10_12_100000_create_password_resets_table.php'));
         File::delete(base_path('database/migrations/2019_08_19_000000_create_failed_jobs_table.php'));
@@ -87,12 +88,7 @@ class AuthPtBrServiceProvider extends ServiceProvider
             __DIR__.'/migrations' => base_path('database/migrations/'),
         ],'authptbr');
 
-        
-
     }
-
-
-    //OBSERVAÇÃO O NOME 'authptbr' É DA PASTA ONDE ESTÁ O PACOTE, src composer.json e readme
 
 }
 
