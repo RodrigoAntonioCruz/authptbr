@@ -49,14 +49,7 @@ Diretório( config/auth.php )
 Linha 98 no trecho de código ( 'table' => 'redefinir_senha', )
 
 
-*Alterar nome da tabela usuarios
-
-Diretório( app/Usuario.php )
-
-Linha 20 no trecho de código ( protected $table = 'usuarios'; )
-
-
-*Alterar nome dos campos da tabela usuarios (Controller RegisterController)
+*Alterar nome dos campos da tabela usuarios no controller (Controller RegisterController)
 
 Diretório( app/Http/Controllers/Auth/RegisterController.php )
 
@@ -69,11 +62,16 @@ Linha 69 no trecho de código ( 'senha' => Hash::make($data['password']), )
 Linha 70 no trecho de código ( 'permissao_usuario' => 'admin', )
 
 
-*Alterar nome dos campos da tabela usuarios (Model Usuario)
+*Alterar nome da tabela usuarios
 
 Diretório( app/Usuario.php )
 
 Linha 20 no trecho de código ( protected $table = 'usuarios'; )
+
+
+*Alterar nome dos campos da tabela usuarios (Model Usuario)
+
+Diretório( app/Usuario.php )
 
 Linha 48 no trecho de código ( return $this->attributes['senha']; )
 
