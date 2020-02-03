@@ -14,8 +14,8 @@
                         </div>
                     @endif
 
-                    {{ __('ddsdsdsdsdn link.') }}
-                    {{ __('If you did not receive the email') }}, <a href="{{ route('verification.resend') }}">{{ __('click here to request another') }}</a>.
+                    {{ 'Olá ' . Auth::user()->nome }}
+                    {{ __('. Se você não recebeu o email') }}, <a href="{{ route('verification.resend') }}">{{ __('clique aqui para solicitar outro.') }}</a>.
                 </div>
             </div>
         </div>
