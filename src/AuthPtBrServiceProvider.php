@@ -74,7 +74,11 @@ class AuthPtBrServiceProvider extends ServiceProvider
         ],'authptbr');
 
         //Deleta a pasta migrations
-        File::deleteDirectory(base_path('database/migrations'));
+        //File::deleteDirectory(base_path('database/migrations'));
+        
+        File::delete(base_path('database/migrations/2014_10_12_000000_create_users_table.php'));
+        File::delete(base_path('database/migrations/2014_10_12_100000_create_password_resets_table.php'));
+        File::delete(base_path('database/migrations/2019_08_19_000000_create_failed_jobs_table.php'));
 
         //publica todos as Migrations
         $this->loadViewsFrom(__DIR__.'/migrations', 'database/migrations/');
