@@ -13,6 +13,13 @@ Publique os pacotes
 
 $ php artisan vendor:publish --tag=authptbr --force
 
+Se seu arquivo .ENV está configurado, o próximo passo é fazer a migração
+
+$ php artisan migrate
+
+Após isso faça um composer dump-autoload
+
+$ composer dump-autoload
 
 Versões do Laravel suportadas
 
